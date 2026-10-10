@@ -24,7 +24,8 @@ Created to demonstrate real-world manual testing techniques: developing test cas
 | Paid vacation days             | 13         | 2          | Done         |
 | University course grade system | 14         | 0          | Done         |
 | Car rental                     | 14         | 0          | Done         |
-| **Total**                      | **65**     | **7**      | **Complete** |
+| Tour competition               | 35         | 0          | Done         |
+| **Total**                      | **100**    | **7**      | **Complete** |
 
 ---
 
