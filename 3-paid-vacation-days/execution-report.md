@@ -38,4 +38,3 @@
 | TC-PV-012 | -1  | 10               | Validation Error            | ❌      |
 | TC-PV-013 | 30  | -1               | Validation Error            | ❌      |
 
----

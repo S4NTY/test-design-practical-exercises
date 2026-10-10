@@ -9,9 +9,6 @@
 
 ## Summary Tables
 
-### Summary table of tests
-
-
 | Case      | BE | LE | WP | Expected result |
 |-----------|----|----|----|-----------------|
 | TC-UG-001 | 20 | 50 | 50 | failed          |

@@ -17,12 +17,14 @@ Created to demonstrate real-world manual testing techniques: developing test cas
 
 ## Test coverage
 
-| Module             | Test Cases | Bugs Found | Status       |
-|--------------------|------------|------------|--------------|
-| Price calculation  | 11         | 3          | Done         |
-| Online book store  | 13         | 2          | Done         |
-| Paid vacation days | 13         | 2          | Done         |
-| **Total**          | **37**     | **7**      | **Complete** |
+| Module                         | Test Cases | Bugs Found | Status       |
+|--------------------------------|------------|------------|--------------|
+| Price calculation              | 11         | 3          | Done         |
+| Online book store              | 13         | 2          | Done         |
+| Paid vacation days             | 13         | 2          | Done         |
+| University course grade system | 14         | 0          | Done         |
+| Car rental                     | 14         | 0          | Done         |
+| **Total**                      | **65**     | **7**      | **Complete** |
 
 ---
 
