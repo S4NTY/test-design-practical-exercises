@@ -7,6 +7,15 @@
 
 ---
 
+## Annotation
+The test cases in this document are organized using the following data structure:  
+```"team_name": {"member 1", "member 2", "member 3"}```
+
+**Description:**  
+A dictionary (mapping) where each key is a team name (string) and each value is a set of team members (strings). 
+
+---
+
 ## State Diagram
 
 ![state diagram.png](state%20diagram.png)
@@ -52,6 +61,8 @@
 | R6.9  | "a": {"", "2", "3"}<br>"b": {"4", "2", "5"}                       | "a": {"", "6", "3"}                          | team modified                     | "a": {"", "6", "3"}<br>"b": {"4", "2", "5"}                       |
 | R6.10 | "a": {"1", "2", ""}<br>"b": {"3", "2", "4"}                       | "a": {"1", "5", ""}                          | team modified                     | "a": {"1", "5", ""}<br>"b": {"3", "2", "4"}                       |
 | R6.11 | "a": {"1", "2", ""}<br>"b": {"1", "2", "3"}                       | "b": {"", "2", "3"}<br>"b": {"4", "2", "3"}  | team modified                     | "a" deleted<br>"b": {"4", "2", "3"}                               |
+
+---
 
 ## Detailed Test Cases
 
