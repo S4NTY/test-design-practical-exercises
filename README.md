@@ -25,7 +25,8 @@ Created to demonstrate real-world manual testing techniques: developing test cas
 | University course grade system | 14         | 0          | Done         |
 | Car rental                     | 14         | 0          | Done         |
 | Tour competition               | 35         | 0          | Done         |
-| **Total**                      | **100**    | **7**      | **Complete** |
+| Online pizza ordering          | 25         | 0          | Done         |
+| **Total**                      | **125**    | **7**      | **Complete** |
 
 ---
 
