@@ -26,7 +26,8 @@ Created to demonstrate real-world manual testing techniques: developing test cas
 | Car rental                     | 14         | 0          | Done         |
 | Tour competition               | 35         | 0          | Done         |
 | Online pizza ordering          | 25         | 0          | Done         |
-| **Total**                      | **125**    | **7**      | **Complete** |
+| Extra holiday                  | 10         | 0          | Done         |
+| **Total**                      | **135**    | **7**      | **Complete** |
 
 ---
 
