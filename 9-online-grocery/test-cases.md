@@ -2,8 +2,8 @@
 
 **Module:** online-grocery  
 **Tester:** Alexandr Gusev  
-**Total Cases:** 17  
-**Version:** 1.0
+**Total Cases:** 18  
+**Version:** 2.0
 
 ---
 
@@ -15,24 +15,24 @@
 | Case 2  | 1. Price 1000<br>2. Buy it                                                                  | 1000         | Discount 5%<br>Total spend 1000 |
 | Case 3  | 1. Price 1001<br>2. Buy it                                                                  | 1001         | Discount 5%<br>Total spend 1001 |
 | Case 4  | 1. Price 1000<br>2. Buy it<br>3. Next year                                                  | 0            | Discount 0%<br>Total spend 0    |
-| Case 5  | 1. Price 1000<br>2. Buy it<br>3. Price 1000<br>4. Buy it<br>5. Use discount                 | 950          | Discount 5%<br>Total spend 1000 |
-| Case 6  | 1. Price 1000<br>2. Buy it<br>3. Price 1000<br>4. Buy it<br>5. Use discount<br>6. Next year | 0            | Discount 0%<br>Total spend 0    |
+| Case 5  | 1. Price 1000<br>2. Buy it<br>3. Price 1000<br>4. Use discount<br>5. Buy it                 | 950          | Discount 5%<br>Total spend 1000 |
+| Case 6  | 1. Price 1000<br>2. Buy it<br>3. Price 1000<br>4. Use discount<br>5. Buy it<br>6. Next year | 0            | Discount 0%<br>Total spend 0    |
 | Case 7  | 1. Price 1000<br>2. Buy it<br>3. Price 100<br>4. Buy it                                     | 100          | Discount 5%<br>Total spend 1200 |
 | Case 8  | 1. Price 1999<br>2. Buy it                                                                  | 1999         | Discount 5%<br>Total spend 1999 |
 | Case 9  | 1. Price 2000<br>2. Buy it                                                                  | 2000         | Discount 8%<br>Total spend 2000 |
 | Case 10 | 1. Price 2001<br>2. Buy it                                                                  | 2001         | Discount 8%<br>Total spend 2001 |
-| Case 11 | 1. Price 1999<br>2. Buy it<br>3. Price 500<br>4. Buy it<br>5. Use discount                  | 475          | Discount 8%<br>Total spend 1999 |
-| Case 12 | 1. Price 2000<br>2. Buy it<br>3. Price 1000<br>4. Buy it<br>5. Use discount                 | 920          | Discount 8%<br>Total spend 2920 |
-| Case 13 | 1. Price 2500<br>2. Buy it<br>3. Price 100<br>4. Buy it<br>5. Use discount                  | 92           | Discount 8%<br>Total spend 2592 |
+| Case 11 | 1. Price 1999<br>2. Buy it<br>3. Price 500<br>4. Use discount<br>5. Buy it                  | 475          | Discount 8%<br>Total spend 1999 |
+| Case 12 | 1. Price 2000<br>2. Buy it<br>3. Price 1000<br>4. Use discount<br>5. Buy it                 | 920          | Discount 8%<br>Total spend 2920 |
+| Case 13 | 1. Price 2500<br>2. Buy it<br>3. Price 100<br>4. Use discount<br>5. Buy it                  | 92           | Discount 8%<br>Total spend 2592 |
 | Case 14 | 1. Price 2999<br>2. Buy it<br>3. Next year                                                  | 0            | Discount 0%<br>Total spend 0    |
 | Case 15 | 1. Price 3000<br>2. Buy it<br>3. Next year                                                  | 0            | Discount 0%<br>Total spend 750  |
 | Case 16 | 1. Price 3500<br>2. Buy it<br>3. Next year                                                  | 0            | Discount 0%<br>Total spend 875  |
 | Case 17 | 1. Price 3000<br>2. Buy it<br>3. Next year<br>4. Price 250<br>5. Buy it                     | 250          | Discount 5%<br>Total spend 1000 |
+| Case 18 | 1. Price abc<br>2. Buy it                                                                   | NaN          | Discount 0%<br>Total spend 0    |
 
 ---
 
 ## Detailed Test Cases
-
 ### TC-OG-001
 
 | Field               | Detail                                |
@@ -87,7 +87,7 @@
 |---------------------|-----------------------------------------------------------------------------|
 | **Title**           | R2 – claimed discount excludes current amount from total spend              |
 | **Priority**        | Critical                                                                    |
-| **Steps**           | 1. Price 1000<br>2. Buy it<br>3. Price 1000<br>4. Buy it<br>5. Use discount |
+| **Steps**           | 1. Price 1000<br>2. Buy it<br>3. Price 1000<br>4. Use discount<br>5. Buy it |
 | **Price to pay**    | 950                                                                         |
 | **Expected result** | Discount 5%<br>Total spend 1000                                             |
 
@@ -99,7 +99,7 @@
 |---------------------|---------------------------------------------------------------------------------------------|
 | **Title**           | Discounted purchase does not carry over to next year                                        |
 | **Priority**        | High                                                                                        |
-| **Steps**           | 1. Price 1000<br>2. Buy it<br>3. Price 1000<br>4. Buy it<br>5. Use discount<br>6. Next year |
+| **Steps**           | 1. Price 1000<br>2. Buy it<br>3. Price 1000<br>4. Use discount<br>5. Buy it<br>6. Next year |
 | **Price to pay**    | 0                                                                                           |
 | **Expected result** | Discount 0%<br>Total spend 0                                                                |
 
@@ -159,7 +159,7 @@
 |---------------------|----------------------------------------------------------------------------|
 | **Title**           | R4 – 8% discount claimed, current amount excluded from total spend         |
 | **Priority**        | Critical                                                                   |
-| **Steps**           | 1. Price 1999<br>2. Buy it<br>3. Price 500<br>4. Buy it<br>5. Use discount |
+| **Steps**           | 1. Price 1999<br>2. Buy it<br>3. Price 500<br>4. Use discount<br>5. Buy it |
 | **Price to pay**    | 475                                                                        |
 | **Expected result** | Discount 8%<br>Total spend 1999                                            |
 
@@ -171,7 +171,7 @@
 |---------------------|-----------------------------------------------------------------------------|
 | **Title**           | R4 – 8% discount claimed, current amount added to total spend               |
 | **Priority**        | Critical                                                                    |
-| **Steps**           | 1. Price 2000<br>2. Buy it<br>3. Price 1000<br>4. Buy it<br>5. Use discount |
+| **Steps**           | 1. Price 2000<br>2. Buy it<br>3. Price 1000<br>4. Use discount<br>5. Buy it |
 | **Price to pay**    | 920                                                                         |
 | **Expected result** | Discount 8%<br>Total spend 2920                                             |
 
@@ -183,7 +183,7 @@
 |---------------------|----------------------------------------------------------------------------|
 | **Title**           | R4 – 8% discount with total spend crossing 2000 threshold                  |
 | **Priority**        | High                                                                       |
-| **Steps**           | 1. Price 2500<br>2. Buy it<br>3. Price 100<br>4. Buy it<br>5. Use discount |
+| **Steps**           | 1. Price 2500<br>2. Buy it<br>3. Price 100<br>4. Use discount<br>5. Buy it |
 | **Price to pay**    | 92                                                                         |
 | **Expected result** | Discount 8%<br>Total spend 2592                                            |
 
@@ -233,4 +233,16 @@
 | **Priority**        | Critical                                                                |
 | **Steps**           | 1. Price 3000<br>2. Buy it<br>3. Next year<br>4. Price 250<br>5. Buy it |
 | **Price to pay**    | 250                                                                     |
-| **Expected result** | Discount 5%<br>Total spend 1000                                         |
+| **Expected result** | Discount 5%<br>Total spend 1000                                         | 
+
+---
+
+### TC-OG-018
+
+| Field               | Detail                                                 |
+|---------------------|--------------------------------------------------------|
+| **Title**           | Invalid price input ("abc") – no purchase, no discount |
+| **Priority**        | High                                                   |
+| **Steps**           | 1. Price abc<br>2. Buy it                              |
+| **Price to pay**    | NaN                                                    |
+| **Expected result** | Discount 0%<br>Total spend 0                           |
