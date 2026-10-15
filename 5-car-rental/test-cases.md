@@ -1,8 +1,8 @@
 # Test Cases — Car Rental
 
-**Module:** car-rental
+**Module:** car-rental  
 **Tester:** Alexandr Gusev  
-**Total Cases:**  
+**Total Cases:** 14   
 **Version:** 1.0  
 
 ---
@@ -15,22 +15,22 @@
 
 ## Summary Tables
 
-| Case    | Preconditions   | Steps                               | Expected result     | Total rental price |
-|---------|-----------------|-------------------------------------|---------------------|--------------------|
-| Case 1  | 0 cars, 0 bikes | Add 2 cars                          | 2 cars, 0 bikes     | 600                |
-| Case 2  | 0 cars, 0 bikes | Add 2 bikes                         | 0 cars, 2 bikes     | 200                |
-| Case 3  | 0 cars, 2 bikes | Remove 1 bike                       | 0 cars, 1 bike      | 100                |
-| Case 4  | 2 cars, 0 bikes | Remove 1 car                        | 1 car, 0 bikes      | 300                |
-| Case 5  | 0 cars, 0 bikes | Add 3 cars                          | 3 cars, 1 free bike | 900                |
-| Case 6  | 0 cars, 1 bike  | Add 3 cars                          | 3 cars, 1 free bike | 900                |
-| Case 7  | 0 cars, 2 bikes | Add 3 cars                          | 3 cars, 2 bikes     | 1000               |
-| Case 8  | 3 cars, 0 bikes | Remove 2 cars                       | 1 car, 0 bikes      | 300                |
-| Case 9  | 3 cars, 1 bike  | Remove 1 car                        | 2 cars, 1 bike      | 700                |
-| Case 10 | 3 cars, 2 bikes | Remove 1 bike                       | 3 cars, 1 bike      | 900                |
-| Case 11 | 4 cars, 0 bikes | Remove 1 car                        | 3 cars, 1 free bike | 900                |
-| Case 12 | 3 cars, 0 bikes | Remove 1 free bike, Add car         | 4 cars, 1 free bike | 1200               |
-| Case 13 | 3 cars, 0 bikes | Remove 1 free bike, Remove car      | 2 cars, 0 bikes     | 600                |
-| Case 14 | 3 cars, 0 bikes | Remove 1 free bike, Add bike        | 3 cars, 1 bike      | 900                |
+| Case      | Preconditions   | Steps                          | Expected result     | Total rental price |
+|-----------|-----------------|--------------------------------|---------------------|--------------------|
+| TC-CR-001 | 0 cars, 0 bikes | Add 2 cars                     | 2 cars, 0 bikes     | 600                |
+| TC-CR-002 | 0 cars, 0 bikes | Add 2 bikes                    | 0 cars, 2 bikes     | 200                |
+| TC-CR-003 | 0 cars, 2 bikes | Remove 1 bike                  | 0 cars, 1 bike      | 100                |
+| TC-CR-004 | 2 cars, 0 bikes | Remove 1 car                   | 1 car, 0 bikes      | 300                |
+| TC-CR-005 | 0 cars, 0 bikes | Add 3 cars                     | 3 cars, 1 free bike | 900                |
+| TC-CR-006 | 0 cars, 1 bike  | Add 3 cars                     | 3 cars, 1 free bike | 900                |
+| TC-CR-007 | 0 cars, 2 bikes | Add 3 cars                     | 3 cars, 2 bikes     | 1000               |
+| TC-CR-008 | 3 cars, 0 bikes | Remove 2 cars                  | 1 car, 0 bikes      | 300                |
+| TC-CR-009 | 3 cars, 1 bike  | Remove 1 car                   | 2 cars, 1 bike      | 700                |
+| TC-CR-010 | 3 cars, 2 bikes | Remove 1 bike                  | 3 cars, 1 bike      | 900                |
+| TC-CR-011 | 4 cars, 0 bikes | Remove 1 car                   | 3 cars, 1 free bike | 900                |
+| TC-CR-012 | 3 cars, 0 bikes | Remove 1 free bike, Add car    | 4 cars, 1 free bike | 1200               |
+| TC-CR-013 | 3 cars, 0 bikes | Remove 1 free bike, Remove car | 2 cars, 0 bikes     | 600                |
+| TC-CR-014 | 3 cars, 0 bikes | Remove 1 free bike, Add bike   | 3 cars, 1 bike      | 900                |
 
 ---
 
@@ -201,6 +201,3 @@
 | **Preconditions** | 3 cars, 0 bikes                                          |
 | **Steps**         | 1. Remove 1 free bike<br>2. Add 1 bike                   |
 | **Expected**      | 3 cars, 1 free bike; Total rental price = 900            |
-
----
-
