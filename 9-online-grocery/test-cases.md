@@ -1,4 +1,4 @@
-# Test Cases — Extra holiday
+# Test Cases — Online grocery 
 
 **Module:** online-grocery  
 **Tester:** Alexandr Gusev  
