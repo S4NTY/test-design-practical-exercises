@@ -1,6 +1,6 @@
 # Test Cases — Online pizza ordering 
 
-**Module:** online-pizza-ordering 
+**Module:** online-pizza-ordering  
 **Tester:** Alexandr Gusev  
 **Total Cases:** 25  
 **Version:** 1.0

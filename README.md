@@ -27,7 +27,8 @@ Created to demonstrate real-world manual testing techniques: developing test cas
 | Tour competition               | 35         | 0          | Done         |
 | Online pizza ordering          | 25         | 0          | Done         |
 | Extra holiday                  | 10         | 0          | Done         |
-| **Total**                      | **135**    | **7**      | **Complete** |
+| Online grocery                 | 17         | 0          | Done         |
+| **Total**                      | **152**    | **7**      | **Complete** |
 
 ---
 
