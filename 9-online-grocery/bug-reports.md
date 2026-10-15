@@ -1,6 +1,6 @@
 # Bug Reports
 
-**Project:** online-grocery
+**Project:** online-grocery  
 **Tester:** Alexandr Gusev  
 **Total Bugs:** 1  
 
